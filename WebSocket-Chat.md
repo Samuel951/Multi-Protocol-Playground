@@ -28,16 +28,18 @@ sudo npm install -g wscat
 cd WebSocketChat
 dotnet run
 ```
-- Kestrel will listen on :5000
+# Kestrel will listen on:
+- http://localhost:5091  (HTTP)
+- https://localhost:7266 (HTTPS, dev cert)
 
 ### Test connectivity
 - In one terminal:
 ```
-wscat -c ws://127.0.0.1:5000/ws
+npx wscat -c ws://127.0.0.1:5091/ws
 ```
 - In another terminal:
 ```
-wscat -c ws://127.0.0.1:5000/ws
+npx wscat -c ws://127.0.0.1:5091/ws
 ```
 - Type a message in one client, and it appears in the other.
 ---
