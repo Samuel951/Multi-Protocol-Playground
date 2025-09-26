@@ -35,8 +35,6 @@ response: echo: hello
 - Verifying firewall, NAT, or VPN setups.
 - Teaching/learning socket programming basics.
 
-**Pros & Cons**
-
 **Pros**
 
 - Very lightweight, minimal code.
