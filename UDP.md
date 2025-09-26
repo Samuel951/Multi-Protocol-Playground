@@ -16,7 +16,7 @@ The **UDP Echo server** in this repo is a teaching/demo tool: it listens on port
 
 ##  Run & Test  
 
-\`\`\`bash
+```
 # Install testing tools
 sudo apt install nmap -y
 
@@ -28,8 +28,8 @@ dotnet run -f net7.0
 echo -n "ping" | nc -u -w1 127.0.0.1 5001
 # server logs "UDP 127.0.0.1:xxxxx ping"
 # client receives "echo: ping"
-\`\`\`
-"""
+
+```
 ---
 
 ##  General Use Cases for UDP
