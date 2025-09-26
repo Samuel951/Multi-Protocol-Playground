@@ -48,3 +48,10 @@ Cons
 - No security: anyone can connect and send arbitrary data.
 - Blocking resources per connection (not scalable for thousands of clients).
 - Echo servers don’t perform useful application logic by themselves.
+
+🏦 In HFT Context
+
+At a high-frequency trading firm, a TCP Echo service wouldn’t be used directly for trading, but it illustrates key concepts:
+- Baseline Latency Testing → measure pure TCP round-trip times without application overhead.
+- Connectivity Validation → confirm network paths and ports are reachable across low-latency links (colo → trading gateway).
+- Reference Implementation → a minimal echo is often the first step before building custom feed handlers or order gateways, where every microsecond counts.
