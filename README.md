@@ -20,7 +20,7 @@ sudo apt install nmap -y
 - Run server
 ```
 cd TcpEcho
-dotnet run -f net7.0
+dotnet run
 ```
 - Test connectivity and behaviour
 ```
