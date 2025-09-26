@@ -13,7 +13,7 @@ I built this repo to:
 
 ##  Prerequisites
 
-These samples are meant to run in **WSL2 with Ubuntu**.  
+I run these samples in **WSL2 with Debian**.  
 
 ### Install basics
 ```bash
