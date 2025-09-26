@@ -30,7 +30,7 @@ dotnet run
 ```
 - Kestrel will listen on :5000
 
-- Test connectivity
+###Test connectivity
 - In one terminal:
 ```
 wscat -c ws://127.0.0.1:5000/ws
