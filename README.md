@@ -14,19 +14,17 @@ The TCP Echo server is one of the simplest network services: it listens for inco
 
 Run & Test
 - Install testing tools
-
+```
 sudo apt install nmap -y
-
+```
 - Run server
-
+```
 cd TcpEcho
-
 dotnet run -f net7.0
-
+```
 - Test connectivity and behaviour
-
+```
 nc 127.0.0.1 5000
-
 type: hello
-
 response: echo: hello
+```
