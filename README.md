@@ -1,4 +1,4 @@
-🔌 TCP Echo Server (C#)
+#🔌 TCP Echo Server (C#)
 
 📖 Summary
 
@@ -13,15 +13,14 @@ The TCP Echo server is one of the simplest network services: it listens for inco
 - The connection stays open until the client closes it.
 
 Run & Test
-
-# Install testing tools
+- Install testing tools
 sudo apt install nmap -y
 
-# Run server
+- Run server
 cd TcpEcho
 dotnet run -f net7.0
 
-# Test connectivity and behavior
+- Test connectivity and behavior
 nc 127.0.0.1 5000
-# type: hello
-# response: echo: hello
+type: hello
+response: echo: hello
