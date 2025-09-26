@@ -1,4 +1,4 @@
-# 🧪 Multiprotocol Playground
+#  Multiprotocol Playground
 
 This repository is a **playground of networking projects** implemented in C# with **.NET 7** and **.NET 8**.  
 Each project explores a different protocol — TCP, UDP, HTTP, WebSockets, DNS, MQTT — with simple working servers or clients that you can run and test locally.  
@@ -11,7 +11,7 @@ I built this repo to:
 
 ---
 
-## ⚙️ Prerequisites
+##  Prerequisites
 
 These samples are meant to run in **WSL2 with Ubuntu**.  
 
@@ -38,7 +38,7 @@ sudo apt -y install dotnet-sdk-7.0 dotnet-sdk-8.0
 dotnet --info
 ```
 
-##📂 Projects
+## Projects
 
 Each project has its own folder and a detailed markdown file with:
 - A summary of how the protocol works.
@@ -53,7 +53,7 @@ Each project has its own folder and a detailed markdown file with:
 - UdpEcho.md
 - WebSocketChat.md
 
-##🏦 Why This Matters for HFT
+## Why This Matters for HFT
 
 In high-frequency trading, milliseconds — and even microseconds — matter.
 
