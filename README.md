@@ -28,3 +28,23 @@ nc 127.0.0.1 5000
 type: hello
 response: echo: hello
 ```
+✅ Use Cases
+
+- Network debugging: quickly check if TCP connectivity works.
+- Measuring round-trip latency between client/server.
+- Verifying firewall, NAT, or VPN setups.
+- Teaching/learning socket programming basics.
+
+⚖️ Pros & Cons
+
+Pros
+
+- Very lightweight, minimal code.
+- Easy to test with standard tools (nc, nmap).
+- Reliable transport (TCP guarantees ordering + delivery).
+
+Cons
+
+- No security: anyone can connect and send arbitrary data.
+- Blocking resources per connection (not scalable for thousands of clients).
+- Echo servers don’t perform useful application logic by themselves.
