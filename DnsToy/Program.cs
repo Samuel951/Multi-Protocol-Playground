@@ -2,12 +2,16 @@
 using System.Net.Sockets;
 using System.Buffers.Binary;
 
-using var udp = new UdpClient(new IPEndPoint(IPAddress.Any, 5353));
-Console.WriteLine("DNS toy on :5353 (A test.local -> 1.2.3.4)");
+using var udp = new UdpClient(new IPEndPoint(IPAddress.Any, 5533));
+Console.WriteLine("DNS toy :5533 -> A test.local = 1.2.3.4");
+
 while (true)
 {
-    var (buf, remote) = await udp.ReceiveAsync();
-    ushort id = BinaryPrimitives.ReadUInt16BigEndian(buf.AsSpan(0, 2));
+    var result = await udp.ReceiveAsync();
+    var buf = result.Buffer;
+    var remote = result.RemoteEndPoint;
+
+    ushort id = BinaryPrimitives.ReadUInt16BigEndian(buf.AsSpan(0,2));
 
     // parse qname (very naive)
     int i = 12; var labels = new List<string>();
