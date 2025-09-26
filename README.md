@@ -5,7 +5,7 @@ Each project explores a different protocol — TCP, UDP, HTTP, WebSockets, DNS, 
 
 I built this repo to:  
 - **Learn by doing** → understand how fundamental protocols actually work at the socket/API level.  
-- **Explore use cases** → see how protocols like gRPC, MQTT, and QUIC fit into modern systems.  
+- **Explore use cases** → see how protocols like MQTT fit into modern systems.  
 - **Prepare for HFT (High-Frequency Trading) contexts** → where low-latency networking, protocol choice, and debugging tools are crucial.  
 - **Have a reusable lab** → I can extend these toys into future experiments.  
 
