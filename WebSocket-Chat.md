@@ -17,29 +17,29 @@ The **WebSocket Chat server** in this repo demonstrates this by allowing multipl
 ## Run & Test  
 
 
-# Install testing tool
+- Install testing tool
 ```
 sudo apt install nodejs npm -y
 sudo npm install -g wscat
 ```
 
-# Run server
+- Run server
 ```
 cd WebSocketChat
 dotnet run
 ```
-# Kestrel will listen on :5000
+- Kestrel will listen on :5000
 
-# Test connectivity
-# In one terminal:
+- Test connectivity
+- In one terminal:
 ```
 wscat -c ws://127.0.0.1:5000/ws
 ```
-# In another terminal:
+- In another terminal:
 ```
 wscat -c ws://127.0.0.1:5000/ws
 ```
-# Type a message in one client, and it appears in the other.
+- Type a message in one client, and it appears in the other.
 ---
 
 ##  General Use Cases for WebSockets
