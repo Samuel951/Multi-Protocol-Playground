@@ -17,17 +17,17 @@ The **UDP Echo server** in this repo is a teaching/demo tool: it listens on port
 ##  Run & Test  
 
 ```
-# Install testing tools
+//Install testing tools
 sudo apt install nmap -y
 
-# Run server
+// Run server
 cd UdpEcho
 dotnet run -f net7.0
 
-# Test connectivity and behaviour
+// Test connectivity and behaviour
 echo -n "ping" | nc -u -w1 127.0.0.1 5001
-# server logs "UDP 127.0.0.1:xxxxx ping"
-# client receives "echo: ping"
+// server logs "UDP 127.0.0.1:xxxxx ping"
+// client receives "echo: ping"
 
 ```
 ---
