@@ -33,7 +33,7 @@ dotnet dev-certs https -ep ./localhost.pfx -p password
 
 # Uncomment the Kestrel TLS block in Program.cs to listen on 8443.
 # Test with curl:
-# curl -I --http2 -k https://localhost:8443/health
+curl -I --http2 -k https://localhost:8443/health
 ```
 
 ## General Use Cases for HTTP  
