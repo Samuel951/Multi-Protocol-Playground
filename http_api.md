@@ -27,9 +27,14 @@ curl -i http://127.0.0.1:5000/health
 # Test echo endpoint
 curl -s http://127.0.0.1:5000/echo -X POST -d 'hello world'
 # -> {"you_sent":"hello world"}
-```
 
----
+# Generate a dev certificate:
+dotnet dev-certs https -ep ./localhost.pfx -p password
+
+# Uncomment the Kestrel TLS block in Program.cs to listen on 8443.
+# Test with curl:
+# curl -I --http2 -k https://localhost:8443/health
+```
 
 ## General Use Cases for HTTP  
 - REST APIs and microservices.  
